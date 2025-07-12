@@ -17,7 +17,7 @@ This project aims to build an interpretable, multimodal ML pipeline for predicti
 # Setup
 
 1. Clone the repo
-git clone https://github.com/your-username/Alzheimers-ML-Project.git
+git clone https://github.com/ShubhayuGhosh/Alzheimers-ML-Project.git
 
 2. Install Python dependencies
 pip install -r requirements.txt
