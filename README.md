@@ -8,6 +8,7 @@ Alzheimer's disease — tabular prediction
  
 # Goal:
 Build a compact, well-documented pipeline and notebook set that:
+
 	•	Produces a reproducible baseline classifier for 3-year conversion to AD (binary classification).
 	•	Focuses on non-leaky, clinically meaningful features so results generalize to independent cohorts (e.g., NIMHANS).
 	•	Includes failure audits, interpretability (SHAP), and a small interactive dashboard for per-patient explanation.
