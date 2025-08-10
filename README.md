@@ -1,16 +1,16 @@
 # Alzheimers-ML-Project
-Predicting and Classifying alzheimer's disease using biomarkers
+Alzheimer's disease — tabular prediction 
 
 
 # Project: Alzheimer's Disease Classification (ML)
 
-This project aims to build an interpretable, multimodal ML pipeline for predicting when cognitively normal or mildly impaired individuals will convert to Alzheimer’s Disease (AD), using real-world longitudinal cohort data (NACC, ADNI). We combine clinical, MRI-based, and genetic features to model time-to-conversion, focusing on transparent methods that support both publication and clinical deployment.
-
+ Predict who will convert to Alzheimer’s disease within 3 years using multimodal clinical tabular data with transparent, reproducible ML
+ 
 # Goal:
-	•	Build and benchmark survival models (e.g., Cox Proportional Hazards, Random Survival Forest, XGBoost Survival) to predict conversion from CN/MCI to AD.
-	•	Integrate explainability tools like SHAP to provide model transparency at individual and group levels.
-	•	Evaluate models on external cohorts to ensure generalizability.
-	•	Prototype a clinician-friendly Streamlit dashboard to visualize patient risk and feature contributions.
+Build a compact, well-documented pipeline and notebook set that:
+	•	Produces a reproducible baseline classifier for 3-year conversion to AD (binary classification).
+	•	Focuses on non-leaky, clinically meaningful features so results generalize to independent cohorts (e.g., NIMHANS).
+	•	Includes failure audits, interpretability (SHAP), and a small interactive dashboard for per-patient explanation.
 	•	Contribute toward a publishable, reproducible ML workflow with real translational potential.
 
 
@@ -23,10 +23,36 @@ git clone https://github.com/ShubhayuGhosh/Alzheimers-ML-Project.git
 pip install -r requirements.txt
 
 3.	Prepare the dataset
-	•	Request and download NACC or ADNI data (not hosted here due to license).
-	•	Use our data/cleaning/ scripts to transform raw tables into features.csv.
+	•	Request and download NACC dataset (not hosted here due to license, read more below).
 
 4.	Run Notebooks
+
+# Data Availability
+
+This project uses data from the NACC repository
+These datasets contain sensitive participant information and are not publicly redistributable under the terms of their data use agreements.
+
+What this repository includes:
+
+Example synthetic datasets (data/synthetic/) generated to mimic the structure and statistical properties of the real data — no actual patient data is included.
+
+Code for data preprocessing, model training, and evaluation.
+
+
+What this repository does not include:
+
+Any original or derived participant-level data from NACC
+
+Any files that could directly or indirectly identify a study participant.
+
+
+How to access the real data: Researchers must apply for access directly from the data custodians:
+
+[Data Request Form](https://naccdata.org/requesting-data/data-request-process)
+
+
+Once approved, place the downloaded files and follow the preprocessing instructions in the repository.
+
 
 # Contributing
 
